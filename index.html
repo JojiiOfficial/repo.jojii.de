@@ -1,67 +1,69 @@
-<head>
-    <title>Jojii's repo</title>
+<html bgcolor="black">
+    <head>
+        <title>Jojii's repo</title>
 
-    <script src="baffle.js"></script>
-    <style type="text/css">
-        .blink{
-            font-size: 20px;
-            animation-name: blink;
-            animation-duration: 1s;
-            animation-iteration-count: infinite;
-        }
-        @keyframes blink {
-            0%   {color: lightgreen;}
-            50%  {color: #111;}
-            100% {color: lightgreen;}
-        }
+        <script src="baffle.js"></script>
+        <style type="text/css">
+            .blink{
+                font-size: 20px;
+                animation-name: blink;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes blink {
+                0%   {color: lightgreen;}
+                50%  {color: #111;}
+                100% {color: lightgreen;}
+            }
 
-        .noselect {
-            -webkit-touch-callout: none; /* iOS Safari */
-            -webkit-user-select: none; /* Safari */
-            -khtml-user-select: none; /* Konqueror HTML */
-            -moz-user-select: none; /* Old versions of Firefox */
-            -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-        }
-    </style>
-</head>
+            .noselect {
+                -webkit-touch-callout: none; /* iOS Safari */
+                -webkit-user-select: none; /* Safari */
+                -khtml-user-select: none; /* Konqueror HTML */
+                -moz-user-select: none; /* Old versions of Firefox */
+                -ms-user-select: none; /* Internet Explorer/Edge */
+                user-select: none; /* Non-prefixed version, currently
+            }
+        </style>
+    </head>
 
-<body bgcolor="black" style="color:lightgreen;text-align: center;">
-    <pre  style="margin-top: 30px;">
-::::::'##::'#######::::::::'##:'####:'####:'####::'######:::::'########::'########:'########:::'#######::
-:::::: ##:'##.... ##::::::: ##:. ##::. ##:: ####:'##... ##:::: ##.... ##: ##.....:: ##.... ##:'##.... ##:
-:::::: ##: ##:::: ##::::::: ##:: ##::: ##::. ##:: ##:::..::::: ##:::: ##: ##::::::: ##:::: ##: ##:::: ##:
-:::::: ##: ##:::: ##::::::: ##:: ##::: ##::'##:::. ######::::: ########:: ######::: ########:: ##:::: ##:
-'##::: ##: ##:::: ##:'##::: ##:: ##::: ##::..:::::..... ##:::: ##.. ##::: ##...:::: ##.....::: ##:::: ##:
- ##::: ##: ##:::: ##: ##::: ##:: ##::: ##::::::::'##::: ##:::: ##::. ##:: ##::::::: ##:::::::: ##:::: ##:
-. ######::. #######::. ######::'####:'####:::::::. ######::::: ##:::. ##: ########: ##::::::::. #######::
-:......::::.......::::......:::....::....:::::::::......::::::..:::::..::........::..::::::::::.......:::
-    </pre>
+    <body bgcolor="black" style="color:lightgreen;text-align: center;">
+        <pre  style="margin-top: 30px;">
+    ::::::'##::'#######::::::::'##:'####:'####:'####::'######:::::'########::'########:'########:::'#######::
+    :::::: ##:'##.... ##::::::: ##:. ##::. ##:: ####:'##... ##:::: ##.... ##: ##.....:: ##.... ##:'##.... ##:
+    :::::: ##: ##:::: ##::::::: ##:: ##::: ##::. ##:: ##:::..::::: ##:::: ##: ##::::::: ##:::: ##: ##:::: ##:
+    :::::: ##: ##:::: ##::::::: ##:: ##::: ##::'##:::. ######::::: ########:: ######::: ########:: ##:::: ##:
+    '##::: ##: ##:::: ##:'##::: ##:: ##::: ##::..:::::..... ##:::: ##.. ##::: ##...:::: ##.....::: ##:::: ##:
+     ##::: ##: ##:::: ##: ##::: ##:: ##::: ##::::::::'##::: ##:::: ##::. ##:: ##::::::: ##:::::::: ##:::: ##:
+    . ######::. #######::. ######::'####:'####:::::::. ######::::: ##:::. ##: ########: ##::::::::. #######::
+    :......::::.......::::......:::....::....:::::::::......::::::..:::::..::........::..::::::::::.......:::
+        </pre>
 
-    <b class="crypt">Some of my personal modded packages, prebuild AUR packages or stuff I created myself. Enjoy!</b>
-    <br>
-    <br>
-    <br>
+        <b class="crypt">Some of my personal modded packages, prebuild AUR packages or stuff I created myself. Enjoy!</b>
+        <br>
+        <br>
+        <br>
 
-    <h1 class="crypt">How to add</h1>
+        <h1 class="crypt">How to add</h1>
 
-    <br>
+        <br>
 
-    <h4 class="crypt">Run following to import my public key:</h4>
-    <div style="width: 200px;margin: auto; width: 60%; text-align: center;">
-        <code>sudo pacman-key --keyserver hkp://keys.gnupg.net:80 --recv-keys F042ACB684F4FC76DBBA8C4387B75C673974601F <br> sudo pacman-key --keyserver hkp://keys.gnupg.net:80 --lsign-key F042ACB684F4FC76DBBA8C4387B75C673974601F</code>
-    </div>
+        <h4 class="crypt">Run following to import my public key:</h4>
+        <div style="width: 200px;margin: auto; width: 60%; text-align: center;">
+            <code>sudo pacman-key --keyserver hkp://keys.gnupg.net:80 --recv-keys F042ACB684F4FC76DBBA8C4387B75C673974601F <br> sudo pacman-key --keyserver hkp://keys.gnupg.net:80 --lsign-key F042ACB684F4FC76DBBA8C4387B75C673974601F</code>
+        </div>
 
-    <br>
-    <br>
-    <h4 class="crypt">Add this at the end of your <code>/etc/pacman.conf</code></h4>
-    <div style="width: 200px;margin: auto; width: 500px; text-align: left;padding-left: 12%;">
-        <code>[jojii]<br>
-            <span  style="line-height: 24px;">SigLevel = Required DatabaseOptional<br></span>
-            <span style="line-height: 0px;">Server = https://repo.jojii.de/<span class="blink noselect">_</span></span></code>
-    </div>
+        <br>
+        <br>
+        <h4 class="crypt">Add this at the end of your <code>/etc/pacman.conf</code></h4>
+        <div style="width: 200px;margin: auto; width: 500px; text-align: left;padding-left: 12%;">
+            <code>[jojii]<br>
+                <span  style="line-height: 24px;">SigLevel = Required DatabaseOptional<br></span>
+                <span style="line-height: 0px;">Server = https://repo.jojii.de/<span class="blink noselect">_</span></span></code>
+        </div>
 
-    <script>
-        let crypt = baffle('.crypt').reveal(900);
-    </script>
-</body>
+        <script>
+            let crypt = baffle('.crypt').reveal(900);
+        </script>
+    </body>
+</html>
